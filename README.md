@@ -1,6 +1,6 @@
 # Oggl Pro Video Splash Page
 
-* built in HTML5 Boilerplate *
+*built in HTML5 Boilerplate*
 
 Man is his own star; and the soul that can
 Render an honest and a perfect man,
