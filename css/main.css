@@ -10,18 +10,18 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
+   html,
+   button,
+   input,
+   select,
+   textarea {
     color: #222;
-}
+  }
 
-body {
+  body {
     font-size: 1em;
     line-height: 1.4;
-}
+  }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -29,192 +29,237 @@ body {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+ ::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
  * A better looking default horizontal rule
  */
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+ hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
 
-img {
-    vertical-align: middle;
+ img {
+  vertical-align: middle;
 }
 
 /*
  * Remove default fieldset styles.
  */
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+ fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
-    resize: vertical;
+ textarea {
+  resize: vertical;
 }
 
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
 
-.chromeframe {
+   .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}
+  }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-body, html{
+   body, html{
     background-color:#2B2929;
     color:#EFEDE1;
-    font-family:"WhitneyBook";
-}
+    font-family:"gotham_lightregular";
+  }
 
-h2{
+  h2{
     text-transform: uppercase;
     font-weight:normal;
     margin-bottom:0px;
     padding-bottom:0px;
-}
+    font-size:18px;
+  }
 
-header{
-    padding:20px 0 20px 0;
-    background-image: url(../img/bkg_tile.png);
-}
+  header{
+    padding:17px 0 17px 0;
+    background-image: url(../img/ptrn.png);
+    border-top:2px solid #F5D700;
+  }
 
-header .logo{
+  header .logo{
     width:189px;
     height:70px;
     display: block;
     background-image: url(../img/logo.png);
     background-size:189px 70px;
     float:left;
-}
+  }
 
-header .nokia-phone-name{
-    font-size:30px;
-}
+  header .nokia-phone-name{
+    font-size:25px;
+    line-height: 28px;
+    font-family:"gotham_boldregular";
+  }
 
-header .avail-exclusively{
-    margin-top:10px;
+  header .avail-exclusively{
+    margin-top:15px;
     text-transform: uppercase;
-    font-size:17px;
+    font-size:12px;
+    line-height: 16px;
     float:right;
-}
+  }
 
-footer{
-    padding:45px 0;
-    background-color:#302E2E;
-}
+  .section-copy{
+    padding:42px 0;
+  }
 
-footer p{
+  .section-copy p{
     margin-top:0px;
     padding-top:0px;
     line-height: 22px;
-}
+  }
 
 
-.l-content{
-    height:721px;
+  .l-content{
     background-image:url(../img/video_bkg_x_tile.png);
-    background-color:#030305;
+    background-color:#231F20;
     background-repeat: repeat-x;
-    background-position: center;
-}
+    background-position: 0px 0px;
+    background-size: 6px 726px;
+    position: relative;
 
-.l-content .video{
-    background-image:url(../img/bg.jpg);
-    height:720px;
-    width:100%;
-    background-position: center center;
-}
+  -webkit-box-shadow: 0 5px 6px -6px black;
+     -moz-box-shadow: 0 5px 6px -6px black;
+          box-shadow: 0 5px 6px -6px black;
+  }
 
-.legal-footer{
+  .left-v-gradient{
+    width:150px;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 99;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  }
+  .right-v-gradient{
+    width:150px;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 99;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(1%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+  }
+
+  .legal-footer{
     display: block;
-    color:#676465;
+    color:#aaa;
     text-align: center;
     padding: 10px 0;
     font-size:10px;
     background-image:url(../img/ptrn.png);
-}
+  }
 
-.l-constrained{
-    width:970px;
+  .l-constrained{
+    width:992px;
     margin: 0 auto;
-}
+    padding: 0 30px;
+  }
 
-footer .community-description{
+  .section-copy .community-description{
     float:left;
-    width:390px;
-}
+    width:520px;
+    font-size:14px;
+    color:#efede3;
+  }
+  .section-copy .community-description p{
+    margin-bottom:0;
+  }
 
-footer .windows-phone-store-download{
-    float:right;
-    width:350px;
-    height:120px;
+  .section-copy .windows-phone-store-download{
+    float: right;
     text-decoration: none;
-    color:#fff;
-    color:#676465;
-    font-size:24px;
-    margin:60px 0 20px 0;
-    transition:color 100ms linear;
-}
-footer .windows-phone-store-download:hover{
+    color: #fff;
+    color: #676465;
+    font-size: 24px;
+    margin: 25px 20px 20px 0;
+    transition: counter-reset: ;lor 100ms linear;
+    background-image: url(../img/windows_logo.png);
+    width: 259px;
+    height: 67px;
+    background-size: 259px 67px;
+  }
+  .section-copy .windows-phone-store-download:hover{
     color:white;
-}
+  }
 
-footer .windows-phone-store-download div{
-    display: inline-block;
-    vertical-align: center;
+  #main_vid_container {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  }
 
-}
-footer .windows-phone-store-download .text{
-    width:250px;
-    margin-left:10px;
+  video {
+    min-height: 100%!important;
+    min-width: 100%!important;
+    height: auto !important;
+    width: auto !important;
+    position: absolute; left: 0; top: 0;
+  }
 
-}
 
-.oggl-icon{
+  .oggl-icon{
     width:110px;
     height:110px;
     background-color:#aaa;
     float:right;
-    margin-top:30px;
-}
-
-
-
-
-
+    width:115px;
+    height:115px;
+    background-size:115px 115px;
+    background-image: url(../img/pro_wp8_tile.png);
+  }
 
 
 /* ==========================================================================
@@ -225,43 +270,43 @@ footer .windows-phone-store-download .text{
  * Image replacement
  */
 
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+ .ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
 }
 
 .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
 }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
-.hidden {
-    display: none !important;
-    visibility: hidden;
+ .hidden {
+  display: none !important;
+  visibility: hidden;
 }
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+ .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /*
@@ -269,22 +314,22 @@ footer .windows-phone-store-download .text{
  * when navigated to via the keyboard: h5bp.com/p
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible {
-    visibility: hidden;
+ .invisible {
+  visibility: hidden;
 }
 
 /*
@@ -299,14 +344,14 @@ footer .windows-phone-store-download .text{
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+ .clearfix:before,
+ .clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*
@@ -314,8 +359,8 @@ footer .windows-phone-store-download .text{
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
-    *zoom: 1;
+ .clearfix {
+  *zoom: 1;
 }
 
 /* ==========================================================================
@@ -324,85 +369,85 @@ footer .windows-phone-store-download .text{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-}
+  }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+  @media print,
+  (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
-}
+  }
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
-@media print {
+   @media print {
     * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
+      background: transparent !important;
+      color: #000 !important; /* Black prints faster: h5bp.com/s */
+      box-shadow: none !important;
+      text-shadow: none !important;
     }
 
     a,
     a:visited {
-        text-decoration: underline;
+      text-decoration: underline;
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+      content: " (" attr(href) ")";
     }
 
     abbr[title]:after {
-        content: " (" attr(title) ")";
+      content: " (" attr(title) ")";
     }
 
     /*
      * Don't show links for images, or javascript/internal links
      */
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
+     .ir a:after,
+     a[href^="javascript:"]:after,
+     a[href^="#"]:after {
+      content: "";
     }
 
     pre,
     blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+      border: 1px solid #999;
+      page-break-inside: avoid;
     }
 
     thead {
-        display: table-header-group; /* h5bp.com/t */
+      display: table-header-group; /* h5bp.com/t */
     }
 
     tr,
     img {
-        page-break-inside: avoid;
+      page-break-inside: avoid;
     }
 
     img {
-        max-width: 100% !important;
+      max-width: 100% !important;
     }
 
     @page {
-        margin: 0.5cm;
+      margin: 0.5cm;
     }
 
     p,
     h2,
     h3 {
-        orphans: 3;
-        widows: 3;
+      orphans: 3;
+      widows: 3;
     }
 
     h2,
     h3 {
-        page-break-after: avoid;
+      page-break-after: avoid;
     }
-}
+  }

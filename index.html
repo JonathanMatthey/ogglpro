@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -33,42 +34,51 @@
     </div>
   </header>
   <div class="l-content">
+    <div class="left-v-gradient"></div>
     <div class="l-constrained">
-      <div class="video"></div>
+      <div id="main_vid_container">
+        <video id="main_vid" class="video-js vjs-default-skin"
+        preload="auto" width="992" height="720" autoplay loop
+        poster="img/ogglpro_video.png"
+        data-setup='{"example_option":true}'>
+        <source src="vid/ogglpro_video.mp4" type='video/mp4' />
+        <source src="vid/ogglpro_video.webm" type='video/webm' />
+        <source src="vid/ogglpro_video.ogv" type='video/ogg' />
+      </video>
     </div>
-  </div>
-  <footer class="clearfix">
-    <div class="l-constrained">
+    <div class="section-copy clearfix">
       <div class="community-description">
-        <h2>A community for creatives to capture & curate</h2>
+        <h2>Control your capture like never before</h2>
         <p>
-          Oggl is a brand new way to experience Hipstamatic's beautifully crafted photo effects and connect to like-minded creatives from all around the world.
+          Designed exclusively for the Nokia Lumia 1020’s unique device capabilties, Hipstamatic Oggl PRO features manual exposure, white balance, ISO and shutter speed, and 3x lossless zoom.
         </p>
       </div>
       <a class="oggl-icon" href="#"></a>
       <a href="#" class="windows-phone-store-download">
-        <div class="windows-store-logo" style="width:60px;height:60px;background-color:#222;">
-        </div>
-        <div class="text">Download from Windows Phone Store</div>
       </a>
     </div>
-  </footer>
-  <div class="legal-footer">
-    &copy; 2009 - 2013 Hipstamatic Hipstamatic Hipstamatic Hipstamatic Hipstamatic Hipstamatic Hipstamatic
+    <div class="right-v-gradient"></div>
   </div>
+</div>
+<div class="legal-footer">
+  &copy; 2009 - 2013 Hipstamatic Hipstamatic Hipstamatic Hipstamatic Hipstamatic Hipstamatic Hipstamatic
+</div>
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src='//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+<script src="http://vjs.zencdn.net/4.1/video.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src='//www.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 </body>
 </html>
