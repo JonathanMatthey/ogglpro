@@ -107,15 +107,16 @@ h2{
 }
 
 header{
-    background-color:#302E2E;
     padding:20px 0 20px 0;
+    background-image: url(../img/bkg_tile.png);
 }
 
 header .logo{
-    width:190px;
-    height:72px;
+    width:189px;
+    height:70px;
     display: block;
-    background-color:#222;
+    background-image: url(../img/logo.png);
+    background-size:189px 70px;
     float:left;
 }
 
@@ -144,19 +145,26 @@ footer p{
 
 .l-content{
     height:721px;
-    background-image:url(../img/bg.jpg);
-    background-repeat: no-repeat;
+    background-image:url(../img/video_bkg_x_tile.png);
     background-color:#030305;
+    background-repeat: repeat-x;
     background-position: center;
+}
+
+.l-content .video{
+    background-image:url(../img/bg.jpg);
+    height:720px;
+    width:100%;
+    background-position: center center;
 }
 
 .legal-footer{
     display: block;
-    background-color:#2B2929;
     color:#676465;
     text-align: center;
     padding: 10px 0;
     font-size:10px;
+    background-image:url(../img/ptrn.png);
 }
 
 .l-constrained{
