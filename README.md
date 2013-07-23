@@ -2,10 +2,5 @@
 
 #### built using HTML5 Boilerplate
 
-    Man is his own star; and the soul that can
-    Render an honest and a perfect man,
-    Commands all light, all influence, all fate;
-    Nothing to him falls early or too late.
-    Our acts our angels are, or good or ill,
-    Our fatal shadows that walk by us still."
+"Insist on yourself; never imitate. Your own gift you can present every moment with the cumulative force of a whole life's cultivation; but of the adopted talent of another you have only an extemporaneous half possession. That which each can do best, none but his Maker can teach him."
 
