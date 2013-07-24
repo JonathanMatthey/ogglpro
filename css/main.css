@@ -148,16 +148,16 @@
 
 
   .l-content{
-    background-image:url(../img/video_bkg_x_tile.png);
+    background-image:url(../img/video_bkg.png);
     background-color:#231F20;
     background-repeat: repeat-x;
     background-position: 0px 0px;
-    background-size: 6px 726px;
+    background-size: 12px 732px;
     position: relative;
 
-  -webkit-box-shadow: 0 5px 6px -6px black;
-     -moz-box-shadow: 0 5px 6px -6px black;
-          box-shadow: 0 5px 6px -6px black;
+    -webkit-box-shadow: 0 5px 6px -6px black;
+       -moz-box-shadow: 0 5px 6px -6px black;
+            box-shadow: 0 5px 6px -6px black;
   }
 
   .left-v-gradient{
@@ -223,14 +223,15 @@
     color: #676465;
     font-size: 24px;
     margin: 25px 20px 20px 0;
-    transition: counter-reset: ;lor 100ms linear;
+    transition: opacity 100ms linear;
     background-image: url(../img/windows_logo.png);
-    width: 259px;
-    height: 67px;
-    background-size: 259px 67px;
+    width: 312px;
+    height: 81px;
+    background-size: 312px 81px;
+    opacity: 0.3;
   }
   .section-copy .windows-phone-store-download:hover{
-    color:white;
+    opacity: 1;
   }
 
   #main_vid_container {
